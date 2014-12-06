@@ -16,7 +16,7 @@
 
 include device/lge/g2-common/BoardConfigCommon.mk
 
-TARGET_KERNEL_CONFIG := cyanogenmod_d800_defconfig
+TARGET_KERNEL_CONFIG := d800_defconfig
 
 TARGET_OTA_ASSERT_DEVICE := d800,g2,galbi
 
