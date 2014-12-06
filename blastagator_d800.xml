@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="blastagator" fetch="https://github.com/blastagator/" />
+
+  <project name="cm_device_lge_d800" path="device/lge/d800" remote="blastagator" revision="cm-11.0"/>
+
+</manifest>

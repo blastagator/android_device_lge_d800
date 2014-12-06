@@ -1,0 +1,22 @@
+======================================================================
+==============================+ README +==============================
+======================================================================
+
+Welcome to blastagator's tweaked LG G2 device git.
+
+This git is based on the CM device tree. I tweaked it to build TWRP 
+recovery.
+
+To Build TWRP:
+
+1) Initialize the OmniROM repo.
+2) Sync the OmniROM repo.
+3) Copy the blastagator_<device>.xml and blastagator_g2-common.xml 
+to your omni/.repo/local_manifests folder.
+4) Sync the OmniROM repo again.
+5) Build recovery using full_<device>-userdebug as the target.
+
+NOTE: Do not extract blobs or run setup-makefiles!  This is not 
+necessary because the vendor tree is repo sync'd automatically.
+
+This uses AICP kernel that I patched to enable f2fs.
