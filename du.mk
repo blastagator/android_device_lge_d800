@@ -1,0 +1,22 @@
+# Inherit from the common Open Source product configuration
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+
+# Enhanced NFC
+$(call inherit-product, vendor/du/config/nfc_enhanced.mk)
+
+# Inherit from our custom product configuration
+$(call inherit-product, vendor/du/config/common_full_phone.mk)
+
+## Device identifier. This must come after all inclusions
+PRODUCT_DEVICE := d800
+PRODUCT_NAME := du_d800
+PRODUCT_BRAND := LGE
+PRODUCT_MODEL := LG-D800
+PRODUCT_MANUFACTURER := lge
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    BUILD_FINGERPRINT=lge/g2_att_us/g2:5.0.2/LRX22G/150722227a363:user/release-keys \
+    PRIVATE_BUILD_DESC="g2_att_us-user 5.0.2 LRX22G 150722227a363 release-keys"
+
+# Inherit device configuration
+$(call inherit-product, device/lge/d800/device.mk)
