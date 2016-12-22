@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2013 The CyanogenMod Project
+# Copyright (C) 2016 The Paranoid Android Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,9 +16,9 @@
 
 include device/lge/g2-common/BoardConfigCommon.mk
 
-TARGET_KERNEL_CONFIG := cyanogenmod_d800_defconfig
+TARGET_KERNEL_CONFIG := d800_defconfig
 
-TARGET_OTA_ASSERT_DEVICE := d800,g2,galbi
+TARGET_OTA_ASSERT_DEVICE := d800
 
 G2_DTS_TARGET := msm8974-g2-att
 
